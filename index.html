@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_47da6227502fb7e0b8fde01bcd92d83f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_47da6227502fb7e0b8fde01bcd92d83f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_47da6227502fb7e0b8fde01bcd92d83f = L.map(
+                "map_47da6227502fb7e0b8fde01bcd92d83f",
+                {
+                    center: [49.15, -122.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bdb3c0d38284508af2e6149301eb490c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bdb3c0d38284508af2e6149301eb490c.addTo(map_47da6227502fb7e0b8fde01bcd92d83f);
+        
+    
+            var marker_c90cc7085d25fcb89751911df56dd84b = L.marker(
+                [49.1044, -122.6578],
+                {
+}
+            ).addTo(map_47da6227502fb7e0b8fde01bcd92d83f);
+        
+    
+            var icon_638fd06d9cf67734f830109e2b604e1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7339311c3066de0a3e017e45c8d34877 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_922be25a8a0204bb06f164234fe7c6f9 = $(`<div id="html_922be25a8a0204bb06f164234fe7c6f9" style="width: 100.0%; height: 100.0%;">Langley: Infrastructure Node</div>`)[0];
+                popup_7339311c3066de0a3e017e45c8d34877.setContent(html_922be25a8a0204bb06f164234fe7c6f9);
+            
+        
+
+        marker_c90cc7085d25fcb89751911df56dd84b.bindPopup(popup_7339311c3066de0a3e017e45c8d34877)
+        ;
+
+        
+    
+    
+            marker_c90cc7085d25fcb89751911df56dd84b.bindTooltip(
+                `<div>
+                     Click to inspect data log
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c90cc7085d25fcb89751911df56dd84b.setIcon(icon_638fd06d9cf67734f830109e2b604e1b);
+            
+    
+            var marker_05e915478b9ef4f4203db4328c52d470 = L.marker(
+                [49.2827, -123.1207],
+                {
+}
+            ).addTo(map_47da6227502fb7e0b8fde01bcd92d83f);
+        
+    
+            var icon_bed1e4c1e1c2e1d2a31484db45123e53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07e1321cf14ddec7d7341f8b9c06e132 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af58381ae338b3defdcd00f37812af88 = $(`<div id="html_af58381ae338b3defdcd00f37812af88" style="width: 100.0%; height: 100.0%;">Vancouver: Supply Chain Hub</div>`)[0];
+                popup_07e1321cf14ddec7d7341f8b9c06e132.setContent(html_af58381ae338b3defdcd00f37812af88);
+            
+        
+
+        marker_05e915478b9ef4f4203db4328c52d470.bindPopup(popup_07e1321cf14ddec7d7341f8b9c06e132)
+        ;
+
+        
+    
+    
+            marker_05e915478b9ef4f4203db4328c52d470.bindTooltip(
+                `<div>
+                     Click to inspect data log
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05e915478b9ef4f4203db4328c52d470.setIcon(icon_bed1e4c1e1c2e1d2a31484db45123e53);
+            
+    
+            var marker_e1844407eef09cbd1ee7e8e4ddfb803e = L.marker(
+                [49.0504, -122.3045],
+                {
+}
+            ).addTo(map_47da6227502fb7e0b8fde01bcd92d83f);
+        
+    
+            var icon_914de046c24053b91ee9569973fe97aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b25623104f2931a8ff40d0c6325e703 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08653a3db733c09ad9a0efa6146d72ab = $(`<div id="html_08653a3db733c09ad9a0efa6146d72ab" style="width: 100.0%; height: 100.0%;">Abbotsford: Agricultural Center</div>`)[0];
+                popup_7b25623104f2931a8ff40d0c6325e703.setContent(html_08653a3db733c09ad9a0efa6146d72ab);
+            
+        
+
+        marker_e1844407eef09cbd1ee7e8e4ddfb803e.bindPopup(popup_7b25623104f2931a8ff40d0c6325e703)
+        ;
+
+        
+    
+    
+            marker_e1844407eef09cbd1ee7e8e4ddfb803e.bindTooltip(
+                `<div>
+                     Click to inspect data log
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1844407eef09cbd1ee7e8e4ddfb803e.setIcon(icon_914de046c24053b91ee9569973fe97aa);
+            
+    
+            var marker_308ba6e4abd6a780a52064af56f85e59 = L.marker(
+                [49.2001, -122.9109],
+                {
+}
+            ).addTo(map_47da6227502fb7e0b8fde01bcd92d83f);
+        
+    
+            var icon_1a141b2daf260c58ccbe092838444b28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c0dfe4da6ec939dda036c1ed14aa81f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_360db2127d120c1ff600e6b540d55269 = $(`<div id="html_360db2127d120c1ff600e6b540d55269" style="width: 100.0%; height: 100.0%;">New Westminster: Logistics Junction</div>`)[0];
+                popup_4c0dfe4da6ec939dda036c1ed14aa81f.setContent(html_360db2127d120c1ff600e6b540d55269);
+            
+        
+
+        marker_308ba6e4abd6a780a52064af56f85e59.bindPopup(popup_4c0dfe4da6ec939dda036c1ed14aa81f)
+        ;
+
+        
+    
+    
+            marker_308ba6e4abd6a780a52064af56f85e59.bindTooltip(
+                `<div>
+                     Click to inspect data log
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_308ba6e4abd6a780a52064af56f85e59.setIcon(icon_1a141b2daf260c58ccbe092838444b28);
+            
+    
+            var marker_54249057899c1bda6152b40d4e851827 = L.marker(
+                [49.2488, -122.7567],
+                {
+}
+            ).addTo(map_47da6227502fb7e0b8fde01bcd92d83f);
+        
+    
+            var icon_f31591bd9a907a7f4a2dad5a9275327c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f824f8216d73867c64c14163619d1520 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_272311736b475284462f0db85575cc8b = $(`<div id="html_272311736b475284462f0db85575cc8b" style="width: 100.0%; height: 100.0%;">Coquitlam: Spatial Grid Check</div>`)[0];
+                popup_f824f8216d73867c64c14163619d1520.setContent(html_272311736b475284462f0db85575cc8b);
+            
+        
+
+        marker_54249057899c1bda6152b40d4e851827.bindPopup(popup_f824f8216d73867c64c14163619d1520)
+        ;
+
+        
+    
+    
+            marker_54249057899c1bda6152b40d4e851827.bindTooltip(
+                `<div>
+                     Click to inspect data log
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54249057899c1bda6152b40d4e851827.setIcon(icon_f31591bd9a907a7f4a2dad5a9275327c);
+            
+</script>
+</html>
